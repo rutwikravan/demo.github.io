@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <style>
+        .container{
+            max-width: 1200px;
+            width: 90%;
+            margin: auto;
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+            background: #6484C1;
+            color: white;
+            opacity: 0.85;
+            z-index: 100;
+        }
+        .navbar-container{
+            display: flex;
+            justify-content: space-between;
+            height: 64px;
+            align-items: center;
+        }
+
+        .menu-items{
+            order: 2;
+            display: flex;
+        }
+        .logo{
+            height: 50px;
+            width: 50px;
+            background-color:#DB3333;
+            border-radius: 50%;
+        }
+        .menu-items li{
+            list-style: none;
+            margin-left: 1.5rem;
+            font-size: 1.3rem;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        .heading{
+            position: absolute;
+            width: 274px;
+            height: 96px;
+            top: 267px;
+            left: 235px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 48px;
+        }
+        p{
+            position: absolute;
+            width: 274px;
+            left: 235px;
+            height: 96px;
+            top: 350px;
+            font-size: 25px;
+        }
+        .contact{
+            position: absolute;
+            width: 590px;
+            height: 340px;
+            left: 641px;
+            top: 254px;
+            border-radius: 25px;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <ul class="menu-items">
+                <li><a href="rest.html">Home</a></li>
+                <li><a href="rest1.html">About</a></li>
+                <li><a href="rest2.html">Contact</a></li>
+            </ul>
+            <h1 class="logo"></h1>
+        </div>
+    </nav>
+    <div class="heading">
+        <h1>Contact us</h1>
+    </div>
+    <div class="para">
+        <p><p>Need to get in touch with us? Either fill out the form with your inquiry or find the <a href="#">department email</a> you'd like to contact below.</p></p>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <form>
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" placeholder="Email">
+              <br>
+              <label for="subject">What can we help you with?</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </div>
+</body>
+</html>
